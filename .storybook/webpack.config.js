@@ -8,6 +8,13 @@ module.exports = {
         use:
           'react-native-web-image-loader?name=[name].[ext]&scalings[@2x]=2&scalings[-3x]=3',
       },
+      {
+        include: [
+          path.join(__dirname, '../node_modules/react-datepicker/dist/'),
+        ],
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   resolve: {

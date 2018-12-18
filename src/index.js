@@ -18,6 +18,7 @@ export { Stepper } from './Stepper';
 export { default as Text } from './Text';
 export { TextInput } from './TextInput';
 export { Tooltip, TooltipBubble } from './Tooltip';
+export { DatePicker } from './DatePicker';
 
 /* Utils */
 export { default as StyleSheet } from './PlatformStyleSheet';
