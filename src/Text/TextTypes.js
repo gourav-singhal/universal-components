@@ -22,4 +22,5 @@ export type TextType = {|
     | 'success'
     | 'warning'
     | 'white',
+  +numberOfLines?: number,
 |};

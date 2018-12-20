@@ -21,6 +21,7 @@ const fontSizeGen = createStylesGenerator('fontSize', fontSize);
 const alingGen = createStylesGenerator('textAlign', alignTypes);
 
 const Text = ({
+  numberOfLines,
   children,
   italic,
   uppercase,
@@ -32,6 +33,7 @@ const Text = ({
   style,
 }: TextType) => (
   <RNText
+    numberOfLines={numberOfLines}
     data-test={dataTest}
     style={[
       styles.text,
