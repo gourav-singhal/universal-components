@@ -5,7 +5,7 @@ import { DatePickerAndroid, TimePickerAndroid } from 'react-native';
 
 import type { Props } from './DatePickerTypes';
 
-export default class CustomDatePickerAndroid extends React.Component<Props> {
+export default class AndroidDatePicker extends React.Component<Props> {
   componentDidUpdate = (prevProps: Props) => {
     const { isVisible, mode } = this.props;
 
