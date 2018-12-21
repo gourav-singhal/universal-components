@@ -1,6 +1,6 @@
 {
   "name": "@kiwicom/universal-components",
-  "version": "0.0.6",
+  "version": "0.0.7-alpha.5",
   "description": "The proof of concept of universal components.",
   "main": "lib",
   "scripts": {
@@ -16,12 +16,14 @@
     "rnstl": "rnstl",
     "ios": "rnstl && react-native run-ios",
     "android": "rnstl && react-native run-android",
-    "build": "cd scripts && yarn",
+    "build": "yarn && cd scripts && yarn",
     "release": "release-it",
-    "postinstall": "node ./scripts/postInstall.js"
+    "postinstall": "node ./scripts/postInstall.js && node ./scripts/generateTypes.js"
   },
   "files": [
-    "lib"
+    "lib",
+    "scripts/generateTypes.js",
+    "scripts/postInstall.js"
   ],
   "keywords": [
     "react",
@@ -35,6 +37,7 @@
     "@kiwicom/orbit-design-tokens": "^0.2.5",
     "intl": "^1.2.5",
     "react-datepicker": "^2.0.0",
+    "react-native-shimmer": "^0.4.1",
     "react-native-status-bar-height": "^2.2.0",
     "styled-components": "^4.1.2"
   },
